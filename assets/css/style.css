@@ -1,7 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #747d83 ;
     line-height: 1.3;
+    color: #fff;
   }
   
   header {
@@ -9,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
+    background-color: #747d83;
     color: #fff;
   }
 
@@ -21,12 +23,20 @@ body {
 
   
   h1 {
-    font-size: 200%;
+    font-size: 200%;    
   }
-  
+ 
   h2 {
     margin: 2% 0;
     font-size: 250%;
+  }
+
+  h2:hover {
+    text-shadow: 0 0 5px #fff, 0 0 15px #0073e6, 0 0 30px #0073e6;
+  }
+    
+  .devname:hover {
+    
   }
   
   nav ul {
@@ -48,50 +58,36 @@ body {
   
   main {
     display: flex;
-    flex: 1 1 0;
+    flex-wrap: wrap;
     max-width: 96%;
     margin: 2% auto;
   }
 
-  p {
-    /* color: #fff; */
-    align-items: center;
+  .card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
   }
-
-  /* .applications{
-    width: 100%;
-    height: 254px;
-    background: #07182E;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .applications::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, rgba(0, 183, 255) rgb(255, 48, 255));
-    height: 130%;
-    animation: rotBGimg 3s linear infinite;
-    transition: all .2s linear;
-  }
-
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .applications::after {
-    content: "";
-    position: absolute;
-    background: #07182E;
-    inset: 5px;
-  } */
   
+  .card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    /* The client insists that images be at least 400px */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 400px;
+  }
+
+   
   article {
     border-bottom: 1px solid #13293d;
   }
@@ -116,12 +112,7 @@ body {
   }
   
   /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
-  a[href$=".css"]::after{
-    content:"\1F4DD";
-    margin: 3px;
-    display: inline-block;
-  }
-  
+    
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
