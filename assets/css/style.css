@@ -268,3 +268,34 @@ body {
         position: absolute;
       }
   }
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+   .wrapper {
+    display: flex;
+   }
+
+   .about,
+   .work,
+   .contact {
+    justify-content: center;
+    flex-direction: column;
+   }
+
+   .row {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+   }
+
+    .about h2,
+    .work h2,
+    .contact h2 {
+    width: auto;
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    margin-left: 0;
+  }
+}
