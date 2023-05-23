@@ -2,6 +2,10 @@
 
 This is a simple portfolio website showcasing the work and contact information of Matthew Jones, a web developer. The website provides sections for **About**, **Work**, and **Contact**.
 
+The site can be accessed [here](https://jonesmatr.github.io/Professional-Portfolio/).
+
+![Professional Portfolio](./assets/images/portfolio-website.jpg)
+
 ## Table of Contents
 
 - [About](#about)
