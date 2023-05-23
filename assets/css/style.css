@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -5,27 +9,28 @@ body {
     line-height: 1.3;
     color: #fff;
   }
-  
-  header {
+
+  .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    /* padding: 1%; */
     background-color: #747d83;
     color: #fff;
   }
 
-  header img{
+  .header img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
   }
 
-  
+
   h1 {
-    font-size: 200%;    
+    font-size: 200%;
   }
- 
+
   h2 {
     margin: 2% 0;
     font-size: 250%;
@@ -34,92 +39,209 @@ body {
   h2:hover {
     text-shadow: 0 0 5px #fff, 0 0 15px #0073e6, 0 0 30px #0073e6;
   }
-    
-  .devname:hover {
-    
-  }
-  
-  nav ul {
-    display: flex;
+
+  .header nav {
+    display: inline;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+
+  .header nav ul {
+    /* display: flex;
     justify-content: space-between;
     min-width: 300px;
-    list-style: none;
+    list-style: none; */
+    list-style-type: none;
+    display: flex;
   }
-  
+
+  .header nav ul li {
+    margin-left: 25px;
+    padding-bottom: 2%;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+
+}
+
   nav a {
     color: #b9c6ae;
     font-weight: bold;
     text-decoration: none;
   }
-  
+
   nav a:hover {
     color: #fff;
   }
-  
+
   main {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    /* flex-wrap: wrap;
+    margin: 2%; */
+  }
+
+  .wrapper {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 96%;
-    margin: 2% auto;
+    flex-direction: column;
+  }
+
+  .about,
+  .work,
+  .contact {
+    /* display: flex;
+    flex: wrap;
+    align-items: center;
+    margin: 2%;     */
+    /* flex-grow: 1 0 200px; */
+    /* flex: wrap;
+    flex-direction: column; */
+    display: flex;
+    flex: wrap;
+  
+           
+  }
+
+  .column {
+    /* display: flex; */
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 200px;
+    margin: 2%;
   }
 
   .card {
-    flex: 1 0 0;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  .card header {
-    padding: 20px;
-    background: #13293d;
-    color: #fff;
-    
-  }
-  
-  .card img {
-    width: 100%;
-    /* The client insists that images be at least 400px */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 500px;
+   
   }
 
-   
-  article {
-    border-bottom: 1px solid #13293d;
+  .about h2,
+  .work h2,
+  .contact h2 {
+    width: 200px;
+    flex: 0 0 200px;
+    margin-left: 15%;
+    text-align: right;
   }
-  
-  article p {
-    margin: 2% 0;
-    font-size: 110%;
+
+  .card-body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    /* padding-left: 10px;
+    margin: 0 2%;
+    border-left: #0073e6 5px solid; */
+    /* justify-content: center;
+    align-items: center;
+    width: 400px;
+    flex: 0 1 300px; */
+    flex: 1 0 300px;
+    /* position: relative; */
+    /* display: inline-block; */
   }
-  
-  article ul {
+
+  .card-header {
+    position: absolute;
+    /* margin: -4rem 0 1.5rem 0; */
+    top: 10rem;
+    right: 17rem;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+  }
+
+  .card-body p {
     margin-left: 5%;
-    font-size: 110%;
-    list-style: circle;
   }
-  
-  footer {
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+    }
+
+    .item-1 img,
+    .item-2 img,
+    .item-3 img,
+    .item-4 img,
+    .item-5 img {
+        border: #0073e6 8px solid;
+        
+    }
+
+    .item-1 header,
+    .item-2 header,
+    .item-3 header,
+    .item-4 header,
+    .item-5 header {
+        
+        font-size: 18px;
+        color: blue;
+        background-color: #0073e6;
+        padding: 10px;
+        
+
+    }
+
+   
+  /* .row {
     display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: #13293d;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+
+
+  } */
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .row p {
+    padding-bottom: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+
+  }
+
+  .card-body {
+    margin-left: 5%;
+    /* position: relative; */
+  }
+
+  .work img {
+    max-width: 100%;
+    max-height: 250px;
+  }
+
+  a {
+    text-decoration: none;
     color: #fff;
   }
-  
-  /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
+
+  @media screen and (max-width: 864px) {
+    .card-header {
+        position: static;
+    }
     
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    main {
-      max-width: 1200px;
-    }
   }
-  
+
+        
+
