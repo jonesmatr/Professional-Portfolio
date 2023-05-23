@@ -282,6 +282,10 @@ body {
     flex-direction: column;
    }
 
+   .card-body p {
+    text-align: center;
+  }
+
    .row {
     justify-content: center;
     flex-direction: column;
