@@ -4,28 +4,29 @@
   <title>Portfolio Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body>
-  <header class="header">
+<body class="bg-dark text-white">
+  <header class="header d-flex flex-wrap justify-content-between align-items-center">
     <h1 class="dev-name">
         Matthew Jones
     </h1>
-    <figure class="profile-pic">
-    <img src="./assets/images/profile pic.jpg" alt="Developer's Photo">
-    <figcaption>My Super Cool Portfolio</figcaption>
+    <figure class="profile-pic d-flex flex-column justify-content-center align-items-center m-2">
+    <img src="./assets/img/profile pic.jpg" alt="Developer's Photo" class="rounded-circle profile-image">
+    <figcaption class="text-center">My Super Cool Portfolio</figcaption>
     </figure>
     <nav class="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="wrapper">
+    <section class="container">
         <section class="about" id="about">
        <h2>About Me</h2>
        <article class="card-body">
@@ -39,49 +40,47 @@
     </section>
 
     <section class="work" id="work">
-        <h2>Work</h2>
-        <section class="column">
-            <div class="card">
-            <article class="item-1">                
-                <header class="card-header">Homestead Land Buying</header>
-                <a href="https://www.homesteadlandbuying.com/" target="_blank"> 
-                <img src="./assets/images/HLB-website.jpg" alt="Homestead Land Buying"></a>                               
-            </article>
-        
-            <article class="item-2">
-                <header class="card-header">Park Motel and Cabins</header>
-                <a href="https://www.parkmotelandcabins.com/" target="_blank"> 
-                <img src="./assets/images/PMC-website.jpg" alt="Park Motel and Cabins"></a>                
-            </article>
-
-            <article class="item-3">
-                <header class="card-header">Section3300</header>
-                <a href="https://www.section3300.com/" target="_blank"> 
-                <img src="./assets/images/section3300-website.jpg" alt="Section3300"></a>                
-            </article>
-
-            <article class="item-4">
-                <header class="card-header">Agecroft Real Estate</header>
-                <a href="https://www.agecroftrealestate.com/" target="_blank"> 
-                <img src="./assets/images/agecroft-real-estate-website.jpg" alt="Agecroft Real Estate"></a>                
-            </article>
-
-            <article class="item-5">
-              <header class="card-header">What-2-Watch</header>
-              <a href="https://jonesmatr.github.io/What-2-Watch/" target="_blank"> 
-              <img src="./assets/images/What-2-Watch.jpg" alt="What-2-Watch"></a>                
+      <h2>Work</h2>
+      <div class="row">
+          <article class="item-1 col-12">                
+              <header class="card-header">Homestead Land Buying</header>
+              <a href="https://www.homesteadlandbuying.com/" target="_blank"> 
+              <img src="./assets/img/HLB-website.jpg" alt="Homestead Land Buying" class="img-fluid"></a>                               
           </article>
-          </div>
-        </section>
-    </section>
-
+      
+          <article class="item-2 col-sm-6 col-md-3">
+              <header class="card-header">Park Motel and Cabins</header>
+              <a href="https://www.parkmotelandcabins.com/" target="_blank"> 
+              <img src="./assets/img/PMC-website.jpg" alt="Park Motel and Cabins" class="img-fluid"></a>                
+          </article>
+  
+          <article class="item-3 col-sm-6 col-md-3">
+              <header class="card-header">Section3300</header>
+              <a href="https://www.section3300.com/" target="_blank"> 
+              <img src="./assets/img/section3300-website.jpg" alt="Section3300" class="img-fluid"></a>                
+          </article>
+  
+          <article class="item-4 col-sm-6 col-md-3">
+              <header class="card-header">Agecroft Real Estate</header>
+              <a href="https://www.agecroftrealestate.com/" target="_blank"> 
+              <img src="./assets/img/agecroft-real-estate-website.jpg" alt="Agecroft Real Estate" class="img-fluid"></a>                
+          </article>
+  
+          <article class="item-5 col-sm-6 col-md-3">
+            <header class="card-header">What-2-Watch</header>
+            <a href="https://jonesmatr.github.io/What-2-Watch/" target="_blank"> 
+            <img src="./assets/img/What-2-Watch.jpg" alt="What-2-Watch" class="img-fluid"></a>                
+          </article>
+      </div>
+  </section>
+  
     <section class="contact" id="contact">
         <h2>Contact</h2>
         <article class="card-body row">
-            <p>Matthew Jones</p>
-            <p>804.839.1515</p>
-            <p><a href="mailto:jonesmatr@gmail.com">jonesmatr@gmail.com</a></p>
-            <p><a href="https://github.com/jonesmatr" target="_blank">GitHub</a></p>
+            <p class="col">Matthew Jones</p>
+            <p class="col">804.839.1515</p>
+            <p class="col"><a href="mailto:jonesmatr@gmail.com">jonesmatr@gmail.com</a></p>
+            <p class="col"><a href="https://github.com/jonesmatr" target="_blank">GitHub</a></p>
         </article>
     </section>
 </section>
