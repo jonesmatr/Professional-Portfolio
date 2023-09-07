@@ -55,7 +55,8 @@ nav a:hover {
 .item-2 img,
 .item-3 img,
 .item-4 img,
-.item-5 img {
+.item-5 img,
+.item-6 img {
   border: var(--header-blue) 8px solid;
 }
 
@@ -63,7 +64,8 @@ nav a:hover {
 .item-2 header,
 .item-3 header,
 .item-4 header,
-.item-5 header {
+.item-5 header,
+.item-6 header {
   font-size: 14px;
   color: var(--white);
   background-color: var(--header-blue);
@@ -83,7 +85,8 @@ a {
 .item-2,
 .item-3,
 .item-4,
-.item-5 {
+.item-5,
+.item-6 {
     margin-top: 20px;
 }
 
