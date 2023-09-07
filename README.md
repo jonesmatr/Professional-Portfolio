@@ -4,7 +4,7 @@ This is a simple portfolio website showcasing the work and contact information o
 
 The site can be accessed [here](https://jonesmatr.github.io/Professional-Portfolio/).
 
-![Professional Portfolio](./assets/images/portfolio-website.jpg)
+![Professional Portfolio](./assets/img/portfolio-website.jpg)
 
 ## Table of Contents
 

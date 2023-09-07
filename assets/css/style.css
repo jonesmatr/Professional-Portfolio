@@ -1,305 +1,89 @@
-/* Sets global variables that can be used throughout the CSS file (often referred to as a "CSS variable") */
 :root {
-    --white: #fff;
-    --gray: #747d83;
-    --header-blue: #7cd5dbec;
+  --white: #fff;
+  --gray: #747d83;
+  --header-blue: #7cd5dbec;
 }
 
-/* Apply global styles to all elements */
-* {
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Applies a linear gradient background to the body */
 body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-    color: var(--white);
-    background: linear-gradient(217deg, rgba(177, 2, 2, 0.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(123, 184, 192, 0.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-  }
-
-/* Styling for the header section */
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--white);
-  }
-
-  .profile-pic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-  }
-
-  figcaption {
-    font-size: 50px;
-    color: var(--white);
-    justify-content: center;
-    align-items: center;    
-  }
-
-  figcaption:hover {
-    text-shadow: 0 0 5px var(--white), 0 0 15px #0073e6, 0 0 30px #0073e6;
-  }
-
-/* Styling for header images */
-  .header img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-  }
-
-/* Styling for h1 elements */
-  h1 {
-    font-size: 200%;
-  }
-
-/* Styling for h2 elements */  
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
-
-  /* Applies styles to <h2> elements when they are hovered over by the user. */
-  h2:hover {
-    text-shadow: 0 0 5px var(--white), 0 0 15px #0073e6, 0 0 30px #0073e6;
-  }
-
-/* Styling for h2 elements */  
-  .header nav {
-    display: inline;
-    font-size: 20px;
-    margin-right: 20px;
-    padding-top: 15px;
+  line-height: 1.3;
+  background: linear-gradient(217deg, rgba(177, 2, 2, 0.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(123, 184, 192, 0.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
-/* Styling for the unordered list within the navigation section */
-  .header nav ul {    
-    list-style-type: none;
-    display: flex;
-  }
-
-/* Styling for the list items within the unordered list within the navigation section */
-  .header nav ul li {
-    margin-left: 25px;
-    padding-bottom: 2%;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
-    width: fit-content;
+figcaption {
+  font-size: 50px;
 }
 
-/* Styling for the links within the list items within the unordered list within the navigation section */
-  nav a {
-    color: #b9c6ae;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-/* Targets the <li> elements inside an unordered list (<ul>) element that is a child of a nav element with class "header". */
-  nav a:hover {
-    color: var(--white);
-  }
-
-/* Styling for the wrapper section */
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-/* Styling for sections with class .about, .work, and .contact */
-  .about,
-  .work,
-  .contact {
-    display: flex;
-    flex: wrap;
-  }
-
-/* Styling for columns */
-  .column {
-    display: flex;
-    flex: wrap;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 1 200px;
-    margin: 2%;
-  }
-
-/* Styling for cards */
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 750px;
-  }
-
-/* Styling for h2 elements within .about, .work, and .contact sections */
-  .about h2,
-  .work h2,
-  .contact h2 {
-    width: 200px;
-    flex: 0 0 200px;
-    margin-left: 15%;
-    text-align: right;
-  }
-
-/* Styling for card bodies */  
-  .card-body {
-    flex: 1 0 300px;
-  }
-
-/* Position the card header absolutely */  
-  .card-header {
-    position: absolute;
-  }
-
-/* Apply left margin to paragraphs within the card body */  
-  .card-body p {
-    margin-left: 5%;
-  }
-
-/* Style items with class .item-1 to .item-5 */
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-5 {
-        display: inline-block;
-        flex-direction: column;
-        position: relative;
-        margin: 0 1%;
-    }
-
-/* Style the first item differently so that it appears larger than the rest of the items*/
-    .item-1 {
-        display: flex;
-        flex: 1 0 100%;
-        width: 100%;
-        align-items: center;
-    }
-
-/* Style items .item-2 to .item-5 */
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-5 {
-        flex: 1;
-    }
-
-/* Apply a colored border to images within items .item-1 to .item-5 */
-    .item-1 img,
-    .item-2 img,
-    .item-3 img,
-    .item-4 img,
-    .item-5 img {
-        border: var(--header-blue) 8px solid;
-    }
-
-/* Style headers within items .item-1 to .item-5 */
-    .item-1 header,
-    .item-2 header,
-    .item-3 header,
-    .item-4 header,
-    .item-5 header {
-        font-size: 18px;
-        color: var(--white);
-        background-color: var(--header-blue);
-    }
-
-/* Style rows */
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-/* Style paragraphs within rows */
-  .row p {
-    padding-bottom: 0;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
-    width: fit-content;
-  }
-
-/* Apply left margin to card bodies */
-  .card-body {
-    margin-left: 5%;
-  }
-
-/* Set maximum width and height for images within the .work section */
-  .work img {
-    max-width: 100%;
-    max-height: 500px;
-  }
-
-/* Style all links so they look like the rest of the items in the contact section */
-  a {
-    text-decoration: none;
-    color: var(--white);
-  }
-
-/* Media query for screens with a maximum width of 975px */  
-  @media screen and (max-width: 975px) {
-    /* Change the position of the card header to static when screen is resized*/
-    .card-header {
-        position: static;
-    }    
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-5 {
-        flex: 1 0 100%;
-    }
-
-/* Position the card header absolutely */
-    .card-header {
-        position: absolute;
-      }
-  }
-
-/* Media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
-   .wrapper {
-    display: flex;
-   }
-
-   .about,
-   .work,
-   .contact {
-    justify-content: center;
-    flex-direction: column;
-   }
-
-   .card-body p {
-    text-align: center;
-  }
-
-   .row {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-   }
-
-    .about h2,
-    .work h2,
-    .contact h2 {
-    width: auto;
-    display: flex;    
-    justify-content: center;    
-    align-items: center;
-    margin-left: 0;
-  }
+figcaption:hover {
+  text-shadow: 0 0 5px var(--white), 0 0 15px #0073e6, 0 0 30px #0073e6;
 }
+
+h1 {
+  font-size: 200%;
+  margin-left: 1%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+}
+
+h2:hover {
+  text-shadow: 0 0 5px var(--white), 0 0 15px #0073e6, 0 0 30px #0073e6;
+}
+
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+.card-header {
+  position: absolute;
+  font-size: 14px;
+}
+
+.card-body p {
+  margin-left: 5%;
+}
+
+.item-1 img,
+.item-2 img,
+.item-3 img,
+.item-4 img,
+.item-5 img {
+  border: var(--header-blue) 8px solid;
+}
+
+.item-1 header,
+.item-2 header,
+.item-3 header,
+.item-4 header,
+.item-5 header {
+  font-size: 14px;
+  color: var(--white);
+  background-color: var(--header-blue);
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+}
+
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+    margin-top: 20px;
+}
+
